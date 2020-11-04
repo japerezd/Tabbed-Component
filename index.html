@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tabs--radioactive active" data-index="0">
+                
+                <p><i class="fas fa-radiation-alt"></i>   Radioactive</p>
+            </div>
+
+            <div class="tabs--flammable" data-index="1">
+                
+                <p><i class="fas fa-fire-alt"></i>   Flammable</p>
+            </div>
+
+            <div class="tabs--biohazard" data-index="2">
+                
+                <p><i class="fas fa-biohazard"></i>   Biohazard</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-radioactive active">
+                <div class="content">   
+                    <h1>RADIOACTIVE</h1>
+                    The process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive.
+                
+                    Three of the most common types of decay are alpha decay, beta decay, and gamma decay, all of which involve emitting one or more particles or photons. The weak force is the mechanism that is responsible for beta decay.
+                </div>
+              
+                <div class="content-logo">
+                    <i class="fas fa-radiation-alt"></i>
+                </div>
+            </div>
+
+            <div class="panel-flammable">
+                <div class="content">
+                    <h1>FLAMMABLE</h1>
+
+                    Flammable materials are combustible materials that ignite easily at ambient temperatures. In other words, a combustible material ignites with some effort and a flammable material catches fire immediately on exposure to flame.
+
+                    The degree of flammability or combustibility in air depends largely upon the volatility of the material - this is related to its composition-specific vapour pressure, which is temperature dependent.
+                </div>
+
+                <div class="content-logo">
+                    <i class="fas fa-fire-alt"></i>
+                </div>
+            </div> 
+
+             <div class="panel-biohazard">
+                <div class="content">
+                    <h1>BIOHAZARD</h1>
+                    Is a biological substance that poses a threat to the health of living organisms, primarily humans. This could include a sample of a microorganism, virus or toxin that can adversely affect human health. A biohazard could also be a substance harmful to other animals.
+
+                    The term and its associated symbol are generally used as a warning, so that those potentially exposed to the    substances will know to take precautions. 
+                </div>
+
+                <div class="content-logo">
+                    <i class="fas fa-biohazard"></i>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

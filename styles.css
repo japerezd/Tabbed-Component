@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.panel{
+    background-color: black;
+    height: 600px;
+    display: flex;
+    padding: 20px;
+}
+
+.panel-flammable, .panel-biohazard{
+    display: none;
+}
+
+.tabs:hover{
+    cursor: pointer;
+}
+
+.tabs{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    user-select: none;
+    width: 1080px;
+}
+
+.tabs > *{
+    width: 33.3333%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin: 0 0 15px 0;
+    padding-left: 2rem;
+    background-color: rgb(26, 25, 25);
+}
+
+/* ACTIVE COLORS TO TABS */
+.tabs--radioactive.active,
+.tabs--flammable.active,
+.tabs--biohazard.active{
+    background-color: rgb(44, 43, 43);
+}
+
+.tabs--radioactive.active p i{
+    background-image: linear-gradient(-315deg, #f9484a 0%, #fbd72b 74%);
+    border-radius: 50%;
+}
+
+.tabs--flammable.active p i{
+    background: linear-gradient(120deg, #d00000 0%, #bd1e2b 74%);
+    border-radius: 50%;
+    border: 1px solid #d00000;
+}
+
+.tabs--biohazard.active p i {
+    /* color: cyan; */
+    background-image: linear-gradient(-120deg, #0ddb7b 0%, #10a38b 74%);
+    border-radius: 50%;
+}
+
+
+/* DEFAULT COLORS TO ICONS */
+p i{
+    color:rgb(44, 43, 43);
+    font-size: 2.3rem;
+    margin-right: 5px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 720px;
+    width: 1080px;
+    background-color: rgb(44, 43, 43);
+    padding-bottom: 1.5rem;
+}
+
+/* ACTIVE PANELS */
+.panel-radioactive.active,
+.panel-flammable.active,
+.panel-biohazard.active{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+
+/*As default my panel radioactive has to be display: none, otherwise it will display weirdly
+when im displaying the other panels  */
+.panel-radioactive{
+    display: none;
+}
+
+/* PANEL RADIOACTIVE */
+.panel-radioactive .content{
+    padding: 50px;
+    align-items: flex-end;
+    align-content: flex-end;
+    background-image: linear-gradient(-315deg, #f9484a 0%, #fbd72b 74%);
+    width: 350px;
+    font-size: 1.45rem;
+    color: black;
+}
+
+.panel-radioactive .content h1,
+.panel-flammable .content h1,
+.panel-biohazard .content h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.panel-radioactive .content-logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.content-logo .fas.fa-radiation-alt{
+    background-image: linear-gradient(-315deg, #f9484a 0%, #fbd72b 74%);
+    border-radius: 50%;
+    font-size: 30rem;
+}
+
+
+/* PANEL FLAMMABLE */
+
+.panel-flammable .content{
+    padding: 50px;
+    align-items: flex-end;
+    align-content: flex-end;
+    background: linear-gradient(120deg, #d00000 0%, #bd1e2b 74%);
+    width: 350px;
+    font-size: 1.45rem;
+    color: #fff;
+}
+
+.panel-flammable .content-logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.panel-flammable .content-logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.content-logo .fas.fa-fire-alt{
+    background: linear-gradient(-120deg, #d00000 0%, #bd1e2b 74%);
+    border: 5px solid black;
+    border-bottom-color: #d00000;
+    border-radius: 50%;
+    font-size: 30rem;
+}
+
+/* PANEL BIOHAZARD */
+
+.panel-biohazard .content{
+    padding: 50px;
+    align-items: flex-end;
+    align-content: flex-end;
+    background-color: #89d8d3;
+    background-image: linear-gradient(-120deg, #0ddb7b 0%, #10a38b 74%);
+    width: 350px;
+    font-size: 1.45rem;
+    color: black;
+}
+
+.panel-biohazard .content-logo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.content-logo .fas.fa-biohazard{
+    background: linear-gradient(-120deg, #10a38b 0%, #0ddb7b 74%);
+    border-radius: 50%;
+    font-size: 28rem;
+}
